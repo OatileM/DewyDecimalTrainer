@@ -8,115 +8,116 @@ namespace DewDecimalTrainingApp
 {
     public partial class IdentifyAreas : Window
     {
-        private Dictionary<string, string> callNumberDescriptions = new Dictionary<string, string>();
-        private List<string> shuffledKeys = new List<string>();
+        private Dictionary<string, string> originalCallNumberDescriptions = new Dictionary<string, string>();
+        private Dictionary<string, string> shuffledCallNumberDescriptions = new Dictionary<string, string>();
+        private int score = 0;
+        private int maxScore = 0;
 
         public IdentifyAreas()
         {
             InitializeComponent();
-            PopulateDictionary();
-            ShuffleDictionaryKeys();
-            GenerateMatchingQuestions();
+            PopulateDictionaries();
+            PopulateListBoxes();
         }
 
-        public void PopulateDictionary()
+        public void PopulateDictionaries()
         {
-            // Populate the dictionary with call numbers and descriptions.
-            callNumberDescriptions.Add("A. 000", "1. Computer Science, Information, & General Works");
-            callNumberDescriptions.Add("B. 100", "2. Philosophy & Psychology");
-            callNumberDescriptions.Add("C. 200", "3. Religion");
-            callNumberDescriptions.Add("D. 300", "4. Social Sciences");
-            callNumberDescriptions.Add("E. 400", "5. Language");
-            callNumberDescriptions.Add("F. 500", "6. Science");
-            callNumberDescriptions.Add("G. 600", "7. Technology");
-            callNumberDescriptions.Add("H. 700", "8. Arts & Recreation");
-            callNumberDescriptions.Add("I. 800", "9. Literature");
-            callNumberDescriptions.Add("J. 900", "10. History & Geography");
-        }
+            // Populate the original dictionary with call numbers and descriptions.
+            originalCallNumberDescriptions.Add("000", "Computer Science, Information, & General Works");
+            originalCallNumberDescriptions.Add("100", "Philosophy & Psychology");
+            originalCallNumberDescriptions.Add("200", "Religion");
+            originalCallNumberDescriptions.Add("300", "Social Sciences");
+            originalCallNumberDescriptions.Add("400", "Language");
+            originalCallNumberDescriptions.Add("500", "Science");
+            originalCallNumberDescriptions.Add("600", "Technology");
+            originalCallNumberDescriptions.Add("700", "Arts & Recreation");
+            originalCallNumberDescriptions.Add("800", "Literature");
+            originalCallNumberDescriptions.Add("900", "History & Geography");
 
-        private void ShuffleDictionaryKeys()
-        {
-            shuffledKeys = callNumberDescriptions.Keys.ToList();
-            shuffledKeys = shuffledKeys.OrderBy(a => Guid.NewGuid()).ToList();
-        }
+            // Shuffle the call numbers and descriptions.
+            List<string> shuffledKeys = originalCallNumberDescriptions.Keys.ToList();
+            List<string> shuffledDescriptions = originalCallNumberDescriptions.Values.ToList();
+            ShuffleList(shuffledKeys);
+            ShuffleList(shuffledDescriptions);
 
-        private void GenerateMatchingQuestions()
-        {
-            foreach (var key in shuffledKeys)
+            // Populate the shuffled dictionary.
+            for (int i = 0; i < shuffledKeys.Count; i++)
             {
-                AddMatchingQuestion(key, callNumberDescriptions[key]);
+                shuffledCallNumberDescriptions.Add(shuffledKeys[i], shuffledDescriptions[i]);
             }
         }
 
-        private void AddMatchingQuestion(string callNumber, string description)
+        // Helper method to shuffle a list.
+        private void ShuffleList<T>(List<T> list)
         {
-            var questionItem = new StackPanel
+            Random random = new Random();
+            int n = list.Count;
+            while (n > 1)
             {
-                Orientation = Orientation.Horizontal,
-                Margin = new Thickness(10),
-            };
-
-            var callNumberTextBlock = new TextBlock
-            {
-                Text = callNumber,
-                FontSize = 20,
-                FontWeight = FontWeights.Bold,
-                Margin = new Thickness(0, 0, 10, 0),
-            };
-
-            var descriptionTextBlock = new TextBlock
-            {
-                Text = description,
-                FontSize = 20,
-            };
-
-            questionItem.Children.Add(callNumberTextBlock);
-            questionItem.Children.Add(descriptionTextBlock);
-
-            // Adds the question to a container 
-            matchingQuestionsStackPanel.Children.Add(questionItem);
-        }
-
-        private void CheckAnswer_Click(object sender, RoutedEventArgs e)
-        {
-            bool allAnswersCorrect = true; // Assume all answers are correct initially
-
-            foreach (var key in shuffledKeys)
-            {
-                // Construct the expected answer (e.g., "1. Computer Science, Information, & General Works")
-                string expectedAnswer = $"{callNumberDescriptions[key]}";
-
-                // Get the user's input from the TextBox corresponding to the shuffled key
-                TextBox textBox = FindTextBoxByKey(key);
-                string userAnswer = textBox.Text;
-
-                // Check if the user's answer matches the expected answer
-                if (userAnswer != expectedAnswer)
-                {
-                    allAnswersCorrect = false;
-                    break; // At least one answer is incorrect; no need to check further
-                }
-            }
-
-            if (allAnswersCorrect)
-            {
-                MessageBox.Show("All answers are correct!");
-            }
-            else
-            {
-                MessageBox.Show("At least one answer is incorrect. Please try again.");
+                n--;
+                int k = random.Next(n + 1);
+                T value = list[k];
+                list[k] = list[n];
+                list[n] = value;
             }
         }
 
-        private TextBox FindTextBoxByKey(string key)
+        private void PopulateListBoxes()
         {
-            // This function finds the TextBox corresponding to the provided key.
-            // For example, if key is "A. 000", it finds the TextBox with x:Name="txtbAnswerA".
+            // Clear previous items in the ListBoxes.
+            lstbCallNumber.Items.Clear();
+            lstbCallDescriptions.Items.Clear();
 
-            string textBoxName = "txtbAnswer" + key.Substring(0, 1); // Assuming the keys are single characters (A, B, C, etc.)
-            return (TextBox)FindName(textBoxName);
+            // Get four random call numbers and their descriptions for the first column.
+            List<string> selectedCallNumbers = shuffledCallNumberDescriptions.Keys.Take(4).ToList();
+            List<string> selectedDescriptions = selectedCallNumbers.Select(key => shuffledCallNumberDescriptions[key]).ToList();
+
+            // Get seven random descriptions (including the correct answers) for the second column.
+            List<string> allDescriptions = originalCallNumberDescriptions.Values.ToList();
+            ShuffleList(allDescriptions);
+
+            // Exclude correct answers and select three distinct wrong answers.
+            var correctAnswers = selectedCallNumbers.Select(callNumber => originalCallNumberDescriptions[callNumber]);
+            var wrongAnswers = allDescriptions.Except(correctAnswers).Distinct().Take(3).ToList();
+
+            // Merge correct and wrong answers to create the list of selected answers.
+            var selectedAnswers = correctAnswers.Concat(wrongAnswers).ToList();
+            ShuffleList(selectedAnswers); // Shuffle the answers.
+
+            // Populate the ListBoxes.
+            foreach (var callNumber in selectedCallNumbers)
+            {
+                lstbCallNumber.Items.Add(callNumber);
+            }
+
+            foreach (var description in selectedAnswers)
+            {
+                lstbCallDescriptions.Items.Add(description);
+            }
         }
+        private void SubmitButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (lstbCallNumber.SelectedItems.Count != 1 || lstbCallDescriptions.SelectedItems.Count != 1)
+            {
+                MessageBox.Show("Please select one item in each column to match.");
+                return;
+            }
 
+            string selectedCallNumber = lstbCallNumber.SelectedItem.ToString();
+            string selectedDescription = lstbCallDescriptions.SelectedItem.ToString();
 
+            // Retrieve the correct description for the selected call number.
+            string correctDescription = originalCallNumberDescriptions[selectedCallNumber];
+
+            if (selectedDescription == correctDescription)
+            {
+                score++;
+            }
+
+            maxScore++;
+            tbScore.Text = $"Score: {score}/{maxScore}";
+
+            PopulateListBoxes(); // Load the next question.
+        }
     }
 }

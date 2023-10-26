@@ -8,53 +8,34 @@
         Title="IdentifyAreas" Height="450" Width="800">
     <Grid Background="AliceBlue">
         <Grid.ColumnDefinitions >
-            <ColumnDefinition Width="18"/>
-            <ColumnDefinition Width="532"/>
-            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="50"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
-            <RowDefinition Height="400"/>
+            <RowDefinition Height="296"/>
+            <RowDefinition Height="104"/>
         </Grid.RowDefinitions>
 
-        <Border BorderBrush="#FF00295F" BorderThickness="5" Grid.Column="1"  Grid.Row="0" >
+        <Border BorderBrush="#FF00295F" BorderThickness="5" Grid.Column="1" Grid.ColumnSpan="2"  Grid.Row="0" Margin="0,0,306,0" >
             <Border.Effect>
                 <DropShadowEffect/>
             </Border.Effect>
         </Border>
 
-
-        <Label Grid.Column="1" Grid.Row="0"   Content="Match Column A with Column B" FontSize="25" FontWeight="Bold" />
-        <Label Grid.Column="2" Grid.Row="1"   Content="Enter Answers:" FontSize="15" FontWeight="Bold"  VerticalContentAlignment="Top" Margin="0,0,0,368"/>
-
-        <ScrollViewer Grid.Column="1" Grid.Row="1" Margin="10,10,10,10">
-            <StackPanel x:Name="matchingQuestionsStackPanel">
-                <!-- Your matching questions are generated here. -->
-            </StackPanel>
-        </ScrollViewer>
+        <TextBlock  Grid.Column="2" Grid.Row="0" Name="tbScore" Text="Score: 0/0" HorizontalAlignment="Center" Margin="0,10" FontWeight="Bold" FontSize="25"/>
 
 
-        <!-- Textboxes and Labels for the Call Number and Discriptions answers -->
-        <Label Grid.Column="2" Grid.Row="1"  Content="A = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,25,0,343"/>
-        <TextBox x:Name="txtbAnswerA" Grid.Column="2" Grid.Row="1" Margin="65,37,88,343"/>
-        <Label Grid.Column="2" Grid.Row="1"  Content="B = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,57,0,311"/>
-        <TextBox x:Name="txtbAnswerB" Grid.Column="2" Grid.Row="1" Margin="65,69,88,311"/>
-        <Label Grid.Column="2" Grid.Row="1"  Content="C = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,88,0,280"/>
-        <TextBox x:Name="txtbAnswerC" Grid.Column="2" Grid.Row="1" Margin="65,100,88,280"/>
-        <Label Grid.Column="2" Grid.Row="1"  Content="D = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,118,0,250"/>
-        <TextBox x:Name="txtbAnswerD" Grid.Column="2" Grid.Row="1" Margin="65,130,88,250"/>
-        <Label Grid.Column="2" Grid.Row="1"  Content="E = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,148,0,220"/>
-        <TextBox x:Name="txtbAnswerE" Grid.Column="2" Grid.Row="1" Margin="65,161,88,219"/>
-        <Label Grid.Column="2" Grid.Row="1"  Content="F = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,180,0,188"/>
-        <TextBox x:Name="txtbAnswerF" Grid.Column="2" Grid.Row="1" Margin="65,190,88,190"/>
-        <Label Grid.Column="2" Grid.Row="1"  Content="G = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,206,0,162"/>
-        <TextBox x:Name="txtbAnswerG" Grid.Column="2" Grid.Row="1" Margin="65,218,88,162"/>
-        <Label Grid.Column="2" Grid.Row="1"  Content="H = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,238,0,130"/>
-        <TextBox x:Name="txtbAnswerH" Grid.Column="2" Grid.Row="1" Margin="65,248,88,132"/>
-        <Label Grid.Column="2" Grid.Row="1"  Content="I = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,267,0,101"/>
-        <TextBox x:Name="txtbAnswerI" Grid.Column="2" Grid.Row="1" Margin="65,279,88,101"/>
-        <Label Grid.Column="2" Grid.Row="1"  Content="J = " VerticalContentAlignment="Top" FontSize="20" HorizontalAlignment="Left" Width="50" Margin="10,298,0,70"/>
-        <TextBox x:Name="txtbAnswerJ" Grid.Column="2" Grid.Row="1" Margin="65,310,88,70"/>
-        <Button x:Name="btnCheckAnswer" Content="Check Answer" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Click="CheckAnswer_Click" Margin="35,343,31,22" Grid.Row="1" Grid.Column="2"/>
+        <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"   Content="Match The Columns" FontSize="25" FontWeight="Bold" />
+
+        <ListBox x:Name="lstbCallNumber" Grid.Column="1" Grid.Row="1" Margin="0,0,0,10" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <ListBox x:Name="lstbCallDescriptions" Grid.Column="2" Grid.Row="1" Margin="0,0,0,10" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+        <Button  Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Grid.Column="2" Grid.Row="2" Content="Submit" Name="btnSubmit" HorizontalAlignment="Center" Height="35" Width="184" Click="SubmitButton_Click"/>
+        <!--<Button  Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Grid.Column="1" Grid.Row="2"  Content="Restart" Name="btnRestart" HorizontalAlignment="Center" Height="35" Width="184" Click="RestartButton_Click"/>-->
+
+
     </Grid>
 </Window>
