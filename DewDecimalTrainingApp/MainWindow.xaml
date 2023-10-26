@@ -1,0 +1,126 @@
+﻿<Window x:Class="DewDecimalTrainingApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DewDecimalTrainingApp"
+        mc:Ignorable="d"
+        Title="Dewey Decimal Trainer" Height="450" Width="800">
+    <Grid Background="AliceBlue">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*" />
+            <ColumnDefinition Width ="177*" />
+            <ColumnDefinition Width ="591*" />
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+
+        </Grid.RowDefinitions>
+        <Border BorderBrush="#FF00295F" BorderThickness="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="3" >
+            <Border.Effect>
+                <DropShadowEffect/>
+            </Border.Effect>
+        </Border>
+        <Label  Grid.Column="1" Grid.Row="0"  Content="Welcome" FontSize="35" FontWeight="Bold" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="57" Width="162"/>
+        <Label  Grid.Column="1" Grid.Row="0"  Content="To" FontSize="35" FontWeight="Bold" Margin="10,51,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="57" Width="49"/>
+        <Label  Grid.Column="1" Grid.Row="0"  Content="The" FontSize="35" FontWeight="Bold" Margin="10,94,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.RowSpan="2" Height="57" Width="71"/>
+        <Label  Grid.Column="1"  Content="Dewey" FontSize="35" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="13,137,0,0" Grid.RowSpan="2" Foreground="#FF00295F" Height="57" Width="120">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label  Grid.Column="1" Grid.Row="1"  Content="Decimal" FontSize="35" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.507,-0.075" Foreground="#FF00295F" Height="56" Width="143">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label  Grid.Column="1" Grid.Row="1"  Content="Trainer" FontSize="35" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Left" RenderTransformOrigin="0.507,-0.075" Margin="13,0,0,0" Foreground="#FF00295F" Height="56" Width="125">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Image x:Name="imgLibrary"  Grid.Column="1" Grid.Row="1" Margin="0,144,10,0" Grid.RowSpan="2">
+            <Image.Source>
+                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\library.png"/>
+            </Image.Source>
+        </Image>
+
+        <Label x:Name="lblChooseTask" Content="WHAT WOULD YOU LIKE TO DO?" Grid.Column="2" Grid.Row="0" FontFamily="Bahnschrift" FontWeight="Bold" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF00295F" Height="46" Width="431">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="lblReplaceBook" Content="1. Replace Book" FontSize="30" Grid.Column="2" Margin="138,137,0,100" Foreground="#FF00295F" FontWeight="Bold" FontFamily="Ebrima" Grid.RowSpan="2" HorizontalAlignment="Left" Width="235" MouseLeftButtonDown="ReplaceBook">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Image x:Name="imgReplaceBook"  Grid.Column="2" Margin="373,4,175,96" RenderTransformOrigin="0.511,0.589" Grid.Row="1" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-10.979"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.Source>
+                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\replacebook.png"/>
+            </Image.Source>
+        </Image>
+
+        <Label x:Name="lblIdentifyAreas" Content="2. Identify Areas" FontSize="30" Grid.Column="2" Margin="138,64,0,28" Foreground="#FF00295F" FontWeight="Bold" FontFamily="Ebrima" HorizontalAlignment="Left" Width="287" Grid.Row="1" MouseLeftButtonDown="IdentifyAreas">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Image x:Name="imgIdentifyAreas"  Grid.Column="2" Margin="421,83,124,20" Grid.Row="1" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.447"/>
+                    <TranslateTransform Y="-10.979"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.Source>
+                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\binoculors.png"/>
+            </Image.Source>
+        </Image>
+
+
+
+        <Label x:Name="lblFindCallNumbers" Content="3. Find Call Numbers" FontSize="30" Grid.Column="2" Grid.Row="1" Margin="138,121,0,120" Foreground="#FF00295F" FontWeight="Bold" FontFamily="Ebrima"  HorizontalAlignment="Left" Width="305" Grid.RowSpan="2">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Image x:Name="imgFindCallNumbers"  Grid.Column="2" Margin="477,1,78,116" Grid.Row="2" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-179.447"/>
+                    <TranslateTransform Y="-10.979"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.Source>
+                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\identifyareas.png"/>
+            </Image.Source>
+        </Image>
+
+        <Image x:Name="imgOpenBook"  Grid.Column="2"  Grid.Row="2"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="161,30,0,0" Width="277" Height="115">
+            <Image.Source>
+                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\openbook.png"/>
+            </Image.Source>
+        </Image>
+        
+        
+    </Grid>
+    
+
+</Window>

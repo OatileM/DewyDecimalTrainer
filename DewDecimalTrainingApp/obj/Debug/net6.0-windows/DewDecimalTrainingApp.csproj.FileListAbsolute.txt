@@ -1,0 +1,47 @@
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.exe
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.deps.json
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.runtimeconfig.json
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.dll
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.pdb
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.csproj.AssemblyReference.cache
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp_MarkupCompile.cache
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp_MarkupCompile.lref
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.g.resources
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.AssemblyInfoInputs.cache
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.AssemblyInfo.cs
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.csproj.CoreCompileInputs.cache
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.dll
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\refint\DewDecimalTrainingApp.dll
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.pdb
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.genruntimeconfig.cache
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ref\DewDecimalTrainingApp.dll
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ReplaceBook.g.cs
+C:\Users\lab_services_student\Desktop\PROG 3B\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ReplaceBook.baml
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.exe
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.deps.json
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.runtimeconfig.json
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.dll
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.pdb
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ReplaceBook.g.cs
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\App.g.cs
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp_MarkupCompile.cache
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp_MarkupCompile.lref
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ReplaceBook.baml
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.g.resources
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.AssemblyInfoInputs.cache
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.AssemblyInfo.cs
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.csproj.CoreCompileInputs.cache
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.dll
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\refint\DewDecimalTrainingApp.dll
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.pdb
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.genruntimeconfig.cache
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ref\DewDecimalTrainingApp.dll
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\IdentifyAreas.g.cs
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\IdentifyAreas.baml

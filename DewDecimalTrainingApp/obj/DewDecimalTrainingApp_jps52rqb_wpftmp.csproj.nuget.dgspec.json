@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Visual Studio\\School Projects\\PROG7312\\DewDecimalTrainingApp\\DewDecimalTrainingApp\\DewDecimalTrainingApp.csproj": {}
+  },
+  "projects": {
+    "D:\\Visual Studio\\School Projects\\PROG7312\\DewDecimalTrainingApp\\DewDecimalTrainingApp\\DewDecimalTrainingApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Visual Studio\\School Projects\\PROG7312\\DewDecimalTrainingApp\\DewDecimalTrainingApp\\DewDecimalTrainingApp.csproj",
+        "projectName": "DewDecimalTrainingApp",
+        "projectPath": "D:\\Visual Studio\\School Projects\\PROG7312\\DewDecimalTrainingApp\\DewDecimalTrainingApp\\DewDecimalTrainingApp.csproj",
+        "packagesPath": "C:\\Users\\Oatile\\.nuget\\packages\\",
+        "outputPath": "D:\\Visual Studio\\School Projects\\PROG7312\\DewDecimalTrainingApp\\DewDecimalTrainingApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Oatile\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
