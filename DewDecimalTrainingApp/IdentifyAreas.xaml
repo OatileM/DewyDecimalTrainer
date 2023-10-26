@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:DewDecimalTrainingApp"
         mc:Ignorable="d"
         Title="IdentifyAreas" Height="450" Width="800">
-    <Grid Background="AliceBlue">
+    <Grid >
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\background.jpeg" Stretch="UniformToFill" />
+        </Grid.Background>
         <Grid.ColumnDefinitions >
             <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="350"/>
@@ -34,7 +37,7 @@
         <ListBox x:Name="lstbCallDescriptions" Grid.Column="2" Grid.Row="1" Margin="0,0,0,10" d:ItemsSource="{d:SampleData ItemCount=5}"/>
 
         <Button  Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Grid.Column="2" Grid.Row="2" Content="Submit" Name="btnSubmit" HorizontalAlignment="Center" Height="35" Width="184" Click="SubmitButton_Click"/>
-        <!--<Button  Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Grid.Column="1" Grid.Row="2"  Content="Restart" Name="btnRestart" HorizontalAlignment="Center" Height="35" Width="184" Click="RestartButton_Click"/>-->
+        <Button  Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Grid.Column="1" Grid.Row="2"  Content="New Call Numbers" Name="btnGenerate" HorizontalAlignment="Center" Height="35" Width="184" Click="GenerateNewNumbersButton_Click"/>
 
 
     </Grid>
