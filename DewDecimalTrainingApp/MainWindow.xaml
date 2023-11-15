@@ -94,7 +94,7 @@
 
 
 
-        <Label x:Name="lblFindCallNumbers" Content="3. Find Call Numbers" FontSize="30" Grid.Column="2" Grid.Row="1" Margin="138,121,0,120" Foreground="#FF00295F" FontWeight="Bold" FontFamily="Ebrima"  HorizontalAlignment="Left" Width="305" Grid.RowSpan="2">
+        <Label x:Name="lblFindCallNumbers" Content="3. Find Call Numbers" FontSize="30" Grid.Column="2" Grid.Row="1" Margin="138,121,0,120" Foreground="#FF00295F" FontWeight="Bold" FontFamily="Ebrima"  HorizontalAlignment="Left" Width="305" Grid.RowSpan="2" MouseLeftButtonDown="FindCallNumbers">
             <Label.Effect>
                 <DropShadowEffect/>
             </Label.Effect>

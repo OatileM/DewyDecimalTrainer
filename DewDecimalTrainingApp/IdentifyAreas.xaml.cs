@@ -29,6 +29,7 @@ namespace DewDecimalTrainingApp
         // Method to populate the original dictionary with call numbers and descriptions.
         public void PopulateDictionaries()
         {
+            // Populate the original dictionary with call numbers and descriptions.
             originalCallNumberDescriptions.Add("000", "Computer Science, Information, & General Works");
             originalCallNumberDescriptions.Add("100", "Philosophy & Psychology");
             originalCallNumberDescriptions.Add("200", "Religion");
@@ -177,19 +178,28 @@ namespace DewDecimalTrainingApp
             string selectedCallNumber = lstbCallNumber.SelectedItem.ToString();
             string selectedDescription = lstbCallDescriptions.SelectedItem.ToString();
 
-            // Retrieve the correct description for the selected call number.
-            string correctDescription = originalCallNumberDescriptions[selectedCallNumber];
-
-            if (selectedDescription == correctDescription)
+            // Check if the selected items exist in the dictionary.
+            if (originalCallNumberDescriptions.ContainsKey(selectedCallNumber))
             {
-                score++;
+                string correctDescription = originalCallNumberDescriptions[selectedCallNumber];
+
+                if (selectedDescription == correctDescription)
+                {
+                    score++;
+                }
+                maxScore++;
+                PopulateListBoxes(); // Load the next question.
             }
-
-            maxScore++;
+            else
+            {
+                // Handle the case where the selected call number is not found in the dictionary.
+                maxScore++;
+                MessageBox.Show("Answer is wrong.");
+                PopulateListBoxes(); // Load the next question.
+            }
             tbScore.Text = $"Score: {score}/{maxScore}";
-
-            PopulateListBoxes(); // Load the next question.
         }
+
 
         // Event handler for the Generate New Numbers button.
         private void GenerateNewNumbersButton_Click(object sender, RoutedEventArgs e)
@@ -201,6 +211,16 @@ namespace DewDecimalTrainingApp
             PopulateListBoxes(); // Load new shuffled call numbers and descriptions.
             lstbCallNumber.SelectedIndex = -1; // Deselect any previous selections.
             lstbCallDescriptions.SelectedIndex = -1;
+        }
+
+        // Event handler for the Finish button.
+        private void FinishButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Store the user's score.
+            int userScore = score;
+
+            // Set the DialogResult and close the window.
+            this.Close();
         }
     }
 }

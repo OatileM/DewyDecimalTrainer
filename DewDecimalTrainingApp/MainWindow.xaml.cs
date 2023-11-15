@@ -38,5 +38,12 @@ namespace DewDecimalTrainingApp
             ia.Show();
 
         }
+        private void FindCallNumbers(object sender, MouseButtonEventArgs e)
+        {
+            FindCallNumber findCall = new FindCallNumber();
+            findCall.Show();
+
+        }
+
     }
 }

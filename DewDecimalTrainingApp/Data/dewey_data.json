@@ -1,0 +1,795 @@
+{
+  "000": {
+    "name": "Computer science, information, general works",
+    "subcategories": {
+      "001": "Knowledge",
+      "002": "The book",
+      "003": "Systems",
+      "004": "Computer science"
+    }
+  },
+  "010": {
+    "name": "Bibliography",
+    "subcategories": {
+      "011": "Bibliographies and catalogs",
+      "012": "Bibliographies and catalogs of individuals",
+      "014": "Bibliographies and catalogs of anonymous and pseudonymous works"
+    }
+  },
+  "020": {
+    "name": "Library and information sciences",
+    "subcategories": {
+      "021": "Relationships of libraries, archives, information centers",
+      "022": "Administration of physical plant",
+      "023": "Personnel management (Human resource management)"
+    }
+  },
+  "030": {
+    "name": "General encyclopaedic works",
+    "subcategories": {
+      "031": "General encyclopaedic works in American English",
+      "032": "General encyclopaedic works in English",
+      "033": "General encyclopaedic works in other Germanic languages"
+    }
+  },
+  "050": {
+    "name": "General serial publications",
+    "subcategories": {
+      "051": "General serial publications in American English",
+      "052": "General serial publications in English",
+      "053": "General serial publications in other Germanic languages"
+    }
+  },
+  "060": {
+    "name": "General organizations and museology",
+    "subcategories": {
+      "061": "General organizations in North America",
+      "062": "General organizations in British Isles",
+      "063": "General organizations in Germany and neighbouring central European countries"
+    }
+  },
+  "070": {
+    "name": "Documentary media, educational media, news media; journalism; publishing",
+    "subcategories": {
+      "071": "Journalism and newspapers in North America",
+      "072": "Journalism and newspapers in British Isles",
+      "073": "Journalism and newspapers in Germany and neighbouring central European countries"
+    }
+  },
+  "080": {
+    "name": "General collections",
+    "subcategories": {
+      "081": "General collections in American English",
+      "082": "General collections in English",
+      "083": "General collections in other Germanic languages"
+    }
+  },
+  "090": {
+    "name": "Manuscripts, rare books, other rare printed materials",
+    "subcategories": {
+      "091": "Manuscripts",
+      "092": "Block books",
+      "093": "Incunabula"
+    }
+  },
+  "100": {
+    "name": "Philosophy & Psychology",
+    "subcategories": {
+      "101": "Theory of philosophy",
+      "102": "Miscellany of philosophy",
+      "103": "Dictionaries, encyclopaedias, concordances of philosophy"
+    }
+  },
+  "110": {
+    "name": "Metaphysics",
+    "subcategories": {
+      "111": "Ontology",
+      "113": "Cosmology",
+      "114": "Space"
+    }
+  },
+  "120": {
+    "name": "Epistemology, causation, humankind",
+    "subcategories": {
+      "121": "Epistemology",
+      "122": "Causation",
+      "123": "Determinism and indeterminism"
+    }
+  },
+  "130": {
+    "name": "Parapsychology and occultism",
+    "subcategories": {
+      "131": "Parapsychological and occult methods for achieving well-being, happiness, success",
+      "133": "Specific topics in parapsychology and occultism",
+      "135": "Dreams and mysteries"
+    }
+  },
+  "140": {
+    "name": "Specific philosophical schools and viewpoints",
+    "subcategories": {
+      "141": "Idealism and related systems and doctrines",
+      "142": "Critical philosophy",
+      "143": "Bergsonism and intuitionism"
+    }
+  },
+  "150": {
+    "name": "Psychology",
+    "subcategories": {
+      "152": "Sensory perception, movement, emotions, physiological drives",
+      "153": "Conscious mental processes and intelligence",
+      "154": "Subconscious and altered states and processes"
+    }
+  },
+  "160": {
+    "name": "Philosophical logic",
+    "subcategories": {
+      "161": "Induction",
+      "162": "Deduction",
+      "165": "Fallacies and sources of error"
+    }
+  },
+  "170": {
+    "name": "Ethics (Moral philosophy)",
+    "subcategories": {
+      "171": "Ethical systems",
+      "172": "Political ethics",
+      "173": "Ethics of family relationships"
+    }
+  },
+  "180": {
+    "name": "Ancient, medieval, eastern philosophy",
+    "subcategories": {
+      "181": "Eastern philosophy",
+      "182": "Pre-Socratic Greek philosophies",
+      "183": "Sophistic, Socratic, related Greek philosophies"
+    }
+  },
+  "190": {
+    "name": "Modern western and other non-eastern philosophy",
+    "subcategories": {
+      "191": "Philosophy of United States and Canada",
+      "192": "Philosophy of British Isles",
+      "193": "Philosophy of Germany and Austria"
+    }
+  },
+  "200": {
+    "name": "Religion",
+    "subcategories": {
+      "201": "Religious mythology, general classes of religion, interreligious relations and attitudes, social theology",
+      "202": "Doctrines",
+      "203": "Public worship and other practices"
+    }
+  },
+  "210": {
+    "name": "Philosophy and theory of religion",
+    "subcategories": {
+      "211": "Concepts of God",
+      "212": "Existence of God, ways of knowing God, attributes of God",
+      "213": "Creation"
+    }
+  },
+  "220": {
+    "name": "Bible",
+    "subcategories": {
+      "221": "Old Testament (Tanakh)",
+      "222": "Historical books of Old Testament",
+      "223": "Poetic books of Old Testament"
+    }
+  },
+  "230": {
+    "name": "Christianity",
+    "subcategories": {
+      "231": "God",
+      "232": "Jesus Christ and his family",
+      "233": "Humankind"
+    }
+  },
+  "240": {
+    "name": "Christian moral and devotional theology",
+    "subcategories": {
+      "241": "Christian ethics",
+      "242": "Devotional literature",
+      "243": "Evangelistic writings for individuals and families"
+    }
+  },
+  "250": {
+    "name": "Local Christian church and Christian religious orders",
+    "subcategories": {
+      "251": "Preaching",
+      "252": "Texts of sermons",
+      "253": "Pastoral office and work"
+    }
+  },
+  "260": {
+    "name": "Christian social and ecclesiastical theology",
+    "subcategories": {
+      "261": "Social theology and interreligious relations and attitudes",
+      "262": "Ecclesiology",
+      "263": "Days, times, places of religious observance"
+    }
+  },
+  "270": {
+    "name": "History, geographic treatment, biography of Christianity",
+    "subcategories": {
+      "271": "Religious congregations and orders in church history",
+      "272": "Persecutions in general church history",
+      "273": "Doctrinal controversies and heresies in general church history"
+    }
+  },
+  "280": {
+    "name": "Denominations and sects of Christian church",
+    "subcategories": {
+      "281": "Early church and Eastern churches",
+      "282": "Roman Catholic Church",
+      "283": "Anglican churches"
+    }
+  },
+  "290": {
+    "name": "Other religions",
+    "subcategories": {
+      "292": "Classical religion (Greek and Roman religion)",
+      "293": "Germanic religion",
+      "294": "Religions of Indic origin"
+    }
+  },
+  "300": {
+    "name": "Social Sciences",
+    "subcategories": {
+      "301": "Sociology and anthropology",
+      "302": "Social interaction",
+      "303": "Social processes"
+    }
+  },
+  "310": {
+    "name": "Collections of general statistics",
+    "subcategories": {
+      "314": "General statistics of Europe",
+      "315": "General statistics of Asia",
+      "316": "General statistics of Africa"
+    }
+  },
+  "320": {
+    "name": "Political science (Politics and government)",
+    "subcategories": {
+      "321": "Systems of governments and states",
+      "322": "Relation of the state to organized groups and their members",
+      "323": "Civil and political rights"
+    }
+  },
+  "330": {
+    "name": "Economics",
+    "subcategories": {
+      "331": "Labor economics",
+      "332": "Financial economics",
+      "333": "Economics of land and energy"
+    }
+  },
+  "340": {
+    "name": "Law",
+    "subcategories": {
+      "341": "Law of nations",
+      "342": "Constitutional and administrative law",
+      "343": "Military, defence, public property, public finance, tax, commerce (trade), industrial law"
+    }
+  },
+  "350": {
+    "name": "Public administration and military science",
+    "subcategories": {
+      "351": "Public administration",
+      "352": "General considerations of public administration",
+      "353": "Specific fields of public administration"
+    }
+  },
+  "360": {
+    "name": "Social problems and services; associations",
+    "subcategories": {
+      "361": "Social problems and services",
+      "362": "Social problems of and services to groups of people",
+      "363": "Other social problems and services"
+    }
+  },
+  "370": {
+    "name": "Education",
+    "subcategories": {
+      "371": "Schools and their activities; special education",
+      "372": "Primary education (Elementary education)",
+      "373": "Secondary education"
+    }
+  },
+  "380": {
+    "name": "Commerce, communications, transportation",
+    "subcategories": {
+      "381": "Commerce",
+      "382": "International commerce",
+      "383": "Postal communication"
+    }
+  },
+  "390": {
+    "name": "Customs, etiquette, folklore",
+    "subcategories": {
+      "391": "Costume and personal appearance",
+      "392": "Customs of life cycle and domestic life",
+      "393": "Death customs"
+    }
+  },
+  "400": {
+    "name": "Language",
+    "subcategories": {
+      "401": "Philosophy and theory",
+      "402": "Miscellany",
+      "403": "Dictionaries, encyclopaedias, concordances"
+    }
+  },
+  "410": {
+    "name": "Linguistics",
+    "subcategories": {
+      "411": "Writing systems of standard forms of languages",
+      "412": "Etymology of standard forms of languages",
+      "413": "Dictionaries of standard forms of languages"
+    }
+  },
+  "420": {
+    "name": "English and Old English (Anglo-Saxon)",
+    "subcategories": {
+      "421": "Writing system, phonology, phonetics of standard English",
+      "422": "Etymology of standard English",
+      "423": "Dictionaries of standard English"
+    }
+  },
+  "430": {
+    "name": "German and related languages",
+    "subcategories": {
+      "431": "Writing systems, phonology, phonetics of standard German",
+      "432": "Etymology of standard German",
+      "433": "Dictionaries of standard German"
+    }
+  },
+  "440": {
+    "name": "French and related Romance languages",
+    "subcategories": {
+      "441": "Writing systems, phonology, phonetics of standard French",
+      "442": "Etymology of standard French",
+      "443": "Dictionaries of standard French"
+    }
+  },
+  "450": {
+    "name": "Italian, Dalmatian, Romanian, Rhaetian, Sardinian, Corsican",
+    "subcategories": {
+      "451": "Writing systems, phonology, phonetics of standard Italian",
+      "452": "Etymology of standard Italian",
+      "453": "Dictionaries of standard Italian"
+    }
+  },
+  "460": {
+    "name": "Spanish, Portuguese, Galician",
+    "subcategories": {
+      "461": "Writing systems, phonology, phonetics of standard Spanish",
+      "462": "Etymology of standard Spanish",
+      "463": "Dictionaries of standard Spanish"
+    }
+  },
+  "470": {
+    "name": "Latin and related Italic languages",
+    "subcategories": {
+      "471": "Writing systems, phonology, phonetics of classical Latin",
+      "472": "Etymology of classical Latin",
+      "473": "Dictionaries of classical Latin"
+    }
+  },
+  "480": {
+    "name": "Classical Greek and related Hellenic languages",
+    "subcategories": {
+      "481": "Writing systems, phonology, phonetics of classical Greek",
+      "482": "Etymology of classical Greek",
+      "483": "Dictionaries of classical Greek"
+    }
+  },
+  "490": {
+    "name": "Other languages",
+    "subcategories": {
+      "491": "East Indo-European and Celtic languages",
+      "492": "Afro-Asiatic languages",
+      "493": "Non-Semitic Afro-Asiatic languages"
+    }
+  },
+  "500": {
+    "name": "Science",
+    "subcategories": {
+      "501": "Philosophy and theory",
+      "502": "Miscellany",
+      "503": "Dictionaries, encyclopaedias, concordances"
+    }
+  },
+  "510": {
+    "name": "Mathematics",
+    "subcategories": {
+      "511": "General principles of mathematics",
+      "512": "Algebra",
+      "513": "Arithmetic"
+    }
+  },
+  "520": {
+    "name": "Astronomy and allied sciences",
+    "subcategories": {
+      "521": "Celestial mechanics",
+      "522": "Techniques, procedures, apparatus, equipment, materials",
+      "523": "Specific celestial bodies and phenomena"
+    }
+  },
+  "530": {
+    "name": "Physics",
+    "subcategories": {
+      "531": "Classical mechanics",
+      "532": "Fluid mechanics",
+      "533": "Pneumatics (Gas mechanics)"
+    }
+  },
+  "540": {
+    "name": "Chemistry and allied sciences",
+    "subcategories": {
+      "541": "Physical chemistry",
+      "542": "Techniques, procedures, apparatus, equipment, materials",
+      "543": "Analytical chemistry"
+    }
+  },
+  "550": {
+    "name": "Earth sciences",
+    "subcategories": {
+      "551": "Geology, hydrology, meteorology",
+      "552": "Petrology",
+      "553": "Economic geology"
+    }
+  },
+  "560": {
+    "name": "Palaeontology",
+    "subcategories": {
+      "561": "Palaeobotany; fossil microorganisms",
+      "562": "Fossil invertebrates",
+      "563": "Miscellaneous fossil marine and seashore invertebrates"
+    }
+  },
+  "570": {
+    "name": "Biology",
+    "subcategories": {
+      "571": "Physiology and related subjects",
+      "572": "Biochemistry",
+      "573": "Specific physiological systems in animals, regional histology and physiology in animals"
+    }
+  },
+  "580": {
+    "name": "Plants",
+    "subcategories": {
+      "581": "Specific topics in natural history of plants",
+      "582": "Plants noted for specific vegetative characteristics and flowers",
+      "583": "Dicotyledons"
+    }
+  },
+  "590": {
+    "name": "Animals",
+    "subcategories": {
+      "591": "Specific topics in natural history of animals",
+      "592": "Invertebrates",
+      "593": "Miscellaneous marine and seashore invertebrates"
+    }
+  },
+  "600": {
+    "name": "Technology",
+    "subcategories": {
+      "601": "Philosophy and theory",
+      "602": "Miscellany",
+      "603": "Dictionaries, encyclopaedias, concordances"
+    }
+  },
+  "610": {
+    "name": "Medicine and health",
+    "subcategories": {
+      "611": "Human anatomy, cytology, histology",
+      "612": "Human physiology",
+      "613": "Personal health and safety"
+    }
+  },
+  "620": {
+    "name": "Engineering and allied operations",
+    "subcategories": {
+      "621": "Applied physics",
+      "622": "Mining and related operations",
+      "623": "Military and nautical engineering"
+    }
+  },
+  "630": {
+    "name": "Agriculture and related technologies",
+    "subcategories": {
+      "631": "Specific techniques; apparatus, equipment, materials",
+      "632": "Plant injuries, diseases, pests",
+      "633": "Field and plantation crops"
+    }
+  },
+  "640": {
+    "name": "Home and family management",
+    "subcategories": {
+      "641": "Food and drink",
+      "642": "Meals and table service",
+      "643": "Housing and household equipment"
+    }
+  },
+  "650": {
+    "name": "Management and auxiliary services",
+    "subcategories": {
+      "651": "Office services",
+      "652": "Processes of written communication",
+      "653": "Shorthand"
+    }
+  },
+  "660": {
+    "name": "Chemical engineering and related technologies",
+    "subcategories": {
+      "661": "Technology of industrial chemicals",
+      "662": "Technology of explosives, fuels, related products",
+      "663": "Beverage technology"
+    }
+  },
+  "670": {
+    "name": "Manufacturing",
+    "subcategories": {
+      "671": "Metalworking processes and primary metal products",
+      "672": "Iron, steel, other iron alloys",
+      "673": "Nonferrous metals"
+    }
+  },
+  "680": {
+    "name": "Manufacture of products for specific uses",
+    "subcategories": {
+      "681": "Precision instruments and other devices",
+      "682": "Small forge work (Blacksmithing)",
+      "683": "Hardware and household appliances"
+    }
+  },
+  "690": {
+    "name": "Construction of buildings",
+    "subcategories": {
+      "691": "Building materials",
+      "692": "Auxiliary construction practices",
+      "693": "Construction in specific types of materials and for specific purposes"
+    }
+  },
+  "700": {
+    "name": "Arts & Recreation",
+    "subcategories": {
+      "701": "Philosophy and theory of fine and decorative arts",
+      "702": "Miscellany of fine and decorative arts",
+      "703": "Dictionaries, encyclopaedias, concordances of fine and decorative arts"
+    }
+  },
+  "710": {
+    "name": "Area planning and landscape architecture",
+    "subcategories": {
+      "711": "Area planning",
+      "712": "Landscape architecture",
+      "713": "Landscape architecture of trafficways"
+    }
+  },
+  "720": {
+    "name": "Architecture",
+    "subcategories": {
+      "721": "Architectural materials and structural elements",
+      "722": "Architecture from earliest times to ca. 300",
+      "723": "Architecture from ca. 300 to 1399"
+    }
+  },
+  "730": {
+    "name": "Sculpture and related arts",
+    "subcategories": {
+      "731": "Processes, forms, subjects of sculpture",
+      "732": "Sculpture from earliest times to ca. 500, sculpture of nonliterate peoples",
+      "733": "Greek, Etruscan, Roman sculpture"
+    }
+  },
+  "740": {
+    "name": "Graphic arts and decorative arts",
+    "subcategories": {
+      "741": "Drawing and drawings",
+      "742": "Perspective in drawing",
+      "743": "Drawing and drawings by subject"
+    }
+  },
+  "750": {
+    "name": "Painting and paintings",
+    "subcategories": {
+      "751": "Techniques, procedures, apparatus, equipment, materials, forms",
+      "752": "Color",
+      "753": "Symbolism, allegory, mythology, legend"
+    }
+  },
+  "760": {
+    "name": "Printmaking and prints",
+    "subcategories": {
+      "761": "Relief processes",
+      "763": "Lithographic processes",
+      "764": "Chromolithography and serigraphy"
+    }
+  },
+  "770": {
+    "name": "Photography, computer art, cinematography, videography",
+    "subcategories": {
+      "771": "Techniques, procedures, apparatus, equipment, materials",
+      "772": "Metallic salt processes",
+      "773": "Pigment processes of printing"
+    }
+  },
+  "780": {
+    "name": "Music",
+    "subcategories": {
+      "781": "General principles and musical forms",
+      "782": "Vocal music",
+      "783": "Music for single voices"
+    }
+  },
+  "790": {
+    "name": "Recreational and performing arts",
+    "subcategories": {
+      "791": "Public performances",
+      "792": "Stage presentations",
+      "793": "Indoor games and amusements"
+    }
+  },
+  "800": {
+    "name": "Literature",
+    "subcategories": {
+      "801": "Philosophy and theory",
+      "802": "Miscellany",
+      "803": "Dictionaries, encyclopaedias, concordances"
+    }
+  },
+  "810": {
+    "name": "American literature in English",
+    "subcategories": {
+      "811": "American poetry in English",
+      "812": "American drama in English",
+      "813": "American fiction in English"
+    }
+  },
+  "820": {
+    "name": "English and Old English (Anglo-Saxon) literatures",
+    "subcategories": {
+      "821": "English poetry",
+      "822": "English drama",
+      "823": "English fiction"
+    }
+  },
+  "830": {
+    "name": "German literature and literatures of related languages",
+    "subcategories": {
+      "831": "German poetry",
+      "832": "German drama",
+      "833": "German fiction"
+    }
+  },
+  "840": {
+    "name": "French literature and literatures of related Romance languages",
+    "subcategories": {
+      "841": "French poetry",
+      "842": "French drama",
+      "843": "French fiction"
+    }
+  },
+  "850": {
+    "name": "Literatures of Italian, Dalmatian, Romanian, Rhaetian, Sardinian, Corsican languages",
+    "subcategories": {
+      "851": "Italian poetry",
+      "852": "Italian drama",
+      "853": "Italian fiction"
+    }
+  },
+  "860": {
+    "name": "Literatures of Spanish, Portuguese, Galician languages",
+    "subcategories": {
+      "861": "Spanish poetry",
+      "862": "Spanish drama",
+      "863": "Spanish fiction"
+    }
+  },
+  "870": {
+    "name": "Latin literature and literatures of related Italic languages",
+    "subcategories": {
+      "871": "Latin poetry",
+      "872": "Latin dramatic poetry and drama",
+      "873": "Latin epic poetry and fiction"
+    }
+  },
+  "880": {
+    "name": "Classical Greek literature and literatures of related Hellenic languages",
+    "subcategories": {
+      "881": "Classical Greek poetry",
+      "882": "Classical Greek dramatic poetry and drama",
+      "883": "Classical Greek epic poetry and fiction"
+    }
+  },
+  "890": {
+    "name": "Literatures of other specific languages and language families",
+    "subcategories": {
+      "891": "East Indo-European and Celtic literatures",
+      "892": "Afro-Asiatic literatures",
+      "893": "Non-Semitic Afro-Asiatic literatures"
+    }
+  },
+  "900": {
+    "name": "History & Geography",
+    "subcategories": {
+      "901": "Philosophy and theory of history",
+      "902": "Miscellany of history",
+      "903": "Dictionaries, encyclopaedias, concordances of history"
+    }
+  },
+  "910": {
+    "name": "Geography and travel",
+    "subcategories": {
+      "911": "Historical geography",
+      "912": "Graphic representations of the surface of the earth and of extraterrestrial worlds",
+      "913": "Geography of and travel in the ancient world"
+    }
+  },
+  "920": {
+    "name": "Biography, genealogy, insignia",
+    "subcategories": {
+      "921": "Philosophers and psychologists",
+      "922": "Religious leaders, thinkers, workers",
+      "923": "People in social sciences"
+    }
+  },
+  "930": {
+    "name": "History of the ancient world to ca. 499",
+    "subcategories": {
+      "931": "China to 420",
+      "932": "Egypt to 640",
+      "933": "Palestine to 70"
+    }
+  },
+  "940": {
+    "name": "History of Europe",
+    "subcategories": {
+      "941": "British Isles",
+      "942": "England and Wales",
+      "943": "Germany and neighboring central European countries"
+    }
+  },
+  "950": {
+    "name": "History of Asia",
+    "subcategories": {
+      "951": "China and adjacent areas",
+      "952": "Japan",
+      "953": "Arabian Peninsula and adjacent areas"
+    }
+  },
+  "960": {
+    "name": "History of Africa",
+    "subcategories": {
+      "961": "Tunisia and Libya",
+      "962": "Egypt, Sudan, South Sudan",
+      "963": "Ethiopia and Eritrea"
+    }
+  },
+  "970": {
+    "name": "History of North America",
+    "subcategories": {
+      "971": "Canada",
+      "972": "Mexico, Central America, West Indies, Bermuda",
+      "973": "United States"
+    }
+  },
+  "980": {
+    "name": "History of South America",
+    "subcategories": {
+      "981": "Brazil",
+      "982": "Argentina",
+      "983": "Chile"
+    }
+  },
+  "990": {
+    "name": "History of Australasia, Pacific Ocean islands, Atlantic Ocean islands, Arctic islands, Antarctica, extraterrestrial worlds",
+    "subcategories": {
+      "993": "New Zealand",
+      "994": "Australia",
+      "995": "New Guinea and neighboring countries of Melanesia"
+    }
+  }
+}

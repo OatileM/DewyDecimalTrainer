@@ -45,3 +45,5 @@ D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTraini
 D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ref\DewDecimalTrainingApp.dll
 D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\IdentifyAreas.g.cs
 D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\IdentifyAreas.baml
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\FindCallNumber.g.cs
+D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\FindCallNumber.baml
