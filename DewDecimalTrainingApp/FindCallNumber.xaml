@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="FindCallNumber" Height="450" Width="800">
     <Grid>
-        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="177"/>
+                <ColumnDefinition Width="473"/>
+                <ColumnDefinition Width="160"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+
+            <Border BorderBrush="#FF00295F" BorderThickness="2" Grid.Column="1" Margin="34,19,33,60">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
+                <TextBlock x:Name="txtbRandomCallDescriptions" TextWrapping="Wrap" Background="GhostWhite" FontStyle="Oblique"  FontSize="15" FontWeight="Bold" Margin="10"/>
+            </Border>
+
+            <!-- Option Buttons -->
+            <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Vertical" Margin="10">
+                <Button x:Name="btnOption1" Content="Option 1" Margin="0,5"/>
+                <Button x:Name="btnOption2" Content="Option 2" Margin="0,5"/>
+                <Button x:Name="btnOption3" Content="Option 3" Margin="0,5"/>
+                <Button x:Name="btnOption4" Content="Option 4" Margin="0,5"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

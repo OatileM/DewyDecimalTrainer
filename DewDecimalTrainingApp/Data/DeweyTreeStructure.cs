@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DewDecimalTrainingApp.Data
 {
     // Define a class for the Dewey Decimal tree node
     public class DeweyTreeNode
     {
-        public string Category { get; set; }
-        public List<DeweyTreeNode> Subcategories { get; set; }
+        public string Name { get; set; }
+        public Dictionary<string, DeweyTreeNode> Subcategories { get; set; }
 
         public DeweyTreeNode()
         {
-            Subcategories = new List<DeweyTreeNode>();
+            Subcategories = new Dictionary<string, DeweyTreeNode>();
         }
     }
 
@@ -24,7 +23,10 @@ namespace DewDecimalTrainingApp.Data
 
         public DeweyTreeStructure()
         {
-            Root = new DeweyTreeNode { Category = "Root" };
+            Root = new DeweyTreeNode { Name = "Root" };
+
+            // Call the method with the root of the tree
+            ThirdLevelNodes = GetThirdLevelNodes(Root);
         }
 
         // Add a Dewey category to the tree
@@ -35,13 +37,11 @@ namespace DewDecimalTrainingApp.Data
             foreach (string subcategory in subcategories)
             {
                 // Check if the subcategory already exists
-                DeweyTreeNode existingNode = currentNode.Subcategories.Find(node => node.Category == subcategory);
-
-                if (existingNode == null)
+                if (!currentNode.Subcategories.TryGetValue(subcategory, out DeweyTreeNode existingNode))
                 {
                     // If the subcategory doesn't exist, add a new node
-                    DeweyTreeNode newNode = new DeweyTreeNode { Category = subcategory };
-                    currentNode.Subcategories.Add(newNode);
+                    DeweyTreeNode newNode = new DeweyTreeNode { Name = subcategory };
+                    currentNode.Subcategories[subcategory] = newNode;
                     currentNode = newNode;
                 }
                 else
@@ -53,16 +53,55 @@ namespace DewDecimalTrainingApp.Data
         }
 
         // Print the tree (for testing and debugging)
-        public void PrintTree(DeweyTreeNode node, int indent = 0)
+        // Inside DeweyTreeStructure class
+        public override string ToString()
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            PrintTree(Root, 0, stringBuilder);
+            return stringBuilder.ToString();
+        }
+
+        // Modify the PrintTree method to append to the StringBuilder
+        public void PrintTree(DeweyTreeNode node, int indent, StringBuilder stringBuilder)
         {
             if (node != null)
             {
-                Console.WriteLine(new string(' ', indent) + node.Category);
+                stringBuilder.AppendLine(new string(' ', indent) + node.Name);
                 foreach (var subcategory in node.Subcategories)
                 {
-                    PrintTree(subcategory, indent + 2);
+                    PrintTree(subcategory.Value, indent + 2, stringBuilder);
                 }
             }
+        }
+
+        public List<DeweyTreeNode> GetThirdLevelNodes(DeweyTreeNode node, int currentLevel = 1)
+        {
+            List<DeweyTreeNode> thirdLevelNodes = new List<DeweyTreeNode>();
+
+            if (currentLevel == 3)
+            {
+                // If the current level is 3, add the current node
+                thirdLevelNodes.Add(node);
+            }
+            else
+            {
+                // If the current level is less than 3, recursively traverse subcategories
+                foreach (var subcategory in node.Subcategories)
+                {
+                    thirdLevelNodes.AddRange(GetThirdLevelNodes(subcategory.Value, currentLevel + 1));
+                }
+            }
+
+            return thirdLevelNodes;
+        }
+
+        // Property to store third-level nodes for later use
+        public List<DeweyTreeNode> ThirdLevelNodes { get; private set; }
+
+        // New method to get top-level nodes
+        public List<DeweyTreeNode> GetTopLevelNodes()
+        {
+            return Root.Subcategories.Values.ToList();
         }
     }
 }

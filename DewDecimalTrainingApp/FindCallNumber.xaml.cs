@@ -1,46 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Linq;
 using System.Text.Json;
 using System.Windows;
+using System.Windows.Controls;
 using DewDecimalTrainingApp.Data;
-
-
 
 namespace DewDecimalTrainingApp
 {
-    /// <summary>
-    /// Interaction logic for FindCallNumber.xaml
-    /// </summary>
     public partial class FindCallNumber : Window
     {
-        private Dictionary<string, DeweyCategory> deweyCategories;
-        string filePath;
+        private string filePath;
+        private DeweyTreeStructure deweyTree;
+        private List<DeweyTreeNode> options;
 
         public FindCallNumber()
         {
             InitializeComponent();
-            LoadDeweyData(); // Load Dewey Decimal classification data when the window is initialized.
+            LoadDeweyData();
+            LoadQuestion();
         }
 
-        // Method to load Dewey Decimal classification data from a file.
         private void LoadDeweyData()
         {
             try
             {
-                // Provide the full path to the file containing Dewey Decimal classification data.
-                string filePath = @"D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Data\dewey_data.json";
-
-                string jsonData = File.ReadAllText(filePath);
-
-                // Deserialize the JSON data into a DeweyTreeStructure object
-                DeweyTreeStructure deweyTree = JsonSerializer.Deserialize<DeweyTreeStructure>(jsonData);
-
-                // Now, deweyTree contains the Dewey Decimal classification data in a tree structure.
-                // You can access the tree structure using deweyTree.Root and perform operations as needed.
-
-                // For testing and debugging, you can print the tree structure
-                deweyTree.PrintTree(deweyTree.Root);
+                filePath = @"D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Data\dewey_data.json";
+                string jsonData = System.IO.File.ReadAllText(filePath);
+                deweyTree = JsonSerializer.Deserialize<DeweyTreeStructure>(jsonData);
 
                 MessageBox.Show("JSON Data extracted successfully!");
             }
@@ -50,21 +37,81 @@ namespace DewDecimalTrainingApp
             }
         }
 
-
-
-        // ... (other methods and event handlers)
-
-        // Example of how you can use deweyCategories in your methods.
-        private void SomeMethod()
+        private void LoadQuestion()
         {
-            if (deweyCategories != null)
+            // Get all third-level nodes
+            List<DeweyTreeNode> thirdLevelNodes = deweyTree.GetThirdLevelNodes(deweyTree.Root);
+
+            // Checks if there are third-level nodes available
+            if (thirdLevelNodes.Count > 0)
             {
-                // Access the classification data, for example:
-                // DeweyCategory category = deweyCategories["100"];
+                // Randomly select a third-level node
+                Random random = new Random();
+                DeweyTreeNode randomNode = thirdLevelNodes[random.Next(thirdLevelNodes.Count)];
+
+                // Displays the description in the TextBlock
+                txtbRandomCallDescriptions.Text = randomNode.Name;
+
+                // Generates options
+                options = GenerateOptions(randomNode);
+
+                // Display options on buttons
+                btnOption1.Content = options[0].Name;
+                btnOption2.Content = options[1].Name;
+                btnOption3.Content = options[2].Name;
+                btnOption4.Content = options[3].Name;
             }
             else
             {
-                MessageBox.Show("Dewey Decimal data not loaded.");
+                // Handles the case where there are no third-level nodes
+                MessageBox.Show("No third-level nodes found in the Dewey Decimal tree.");
+            }
+        }
+
+
+        private List<DeweyTreeNode> GenerateOptions(DeweyTreeNode correctOption)
+        {
+            List<DeweyTreeNode> allOptions = deweyTree.GetTopLevelNodes().ToList();
+            allOptions.Remove(correctOption);
+
+            // Randomly select three incorrect options
+            Random random = new Random();
+            List<DeweyTreeNode> incorrectOptions = allOptions.OrderBy(x => random.Next()).Take(3).ToList();
+
+            // Add the correct option
+            incorrectOptions.Add(correctOption);
+
+            // Shuffle the options
+            incorrectOptions = incorrectOptions.OrderBy(x => random.Next()).ToList();
+
+            return incorrectOptions;
+        }
+
+        private void CheckAnswer(DeweyTreeNode selectedOption)
+        {
+            if (selectedOption == options[0])
+            {
+                MessageBox.Show("Correct answer! Loading next question.");
+                LoadQuestion();
+            }
+            else
+            {
+                MessageBox.Show("Wrong answer! Loading next question.");
+                LoadQuestion();
+            }
+        }
+
+        private void btnOption_Click(object sender, RoutedEventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            string selectedOptionName = clickedButton?.Content.ToString();
+
+            // Find the corresponding DeweyTreeNode for the selected option
+            DeweyTreeNode selectedOption = options.Find(option => option.Name == selectedOptionName);
+
+            if (selectedOption != null)
+            {
+                CheckAnswer(selectedOption);
             }
         }
     }
