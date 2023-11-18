@@ -6,18 +6,46 @@
         xmlns:local="clr-namespace:DewDecimalTrainingApp"
         mc:Ignorable="d"
         Title="FindCallNumber" Height="450" Width="800">
-    <Grid>
+    <Grid Background="AliceBlue">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="177"/>
-                <ColumnDefinition Width="473"/>
-                <ColumnDefinition Width="160"/>
+                <ColumnDefinition Width="59*"/>
+                <ColumnDefinition Width="141*"/>
+
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="150"/>
-                <RowDefinition Height="150"/>
-                <RowDefinition Height="150"/>
+                <RowDefinition Height="300"/>
             </Grid.RowDefinitions>
+
+            <Border BorderBrush="#FF00295F" BorderThickness="5" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="2" >
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
+            </Border>
+
+            <Label  Content="Dewey" FontSize="25" FontWeight="Bold" HorizontalAlignment="Left" Foreground="#FF00295F" Width="88" Grid.Row="0" Margin="11,10,0,6">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label  Content="Decimal" FontSize="25" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.507,-0.075" Foreground="#FF00295F" Height="45" Width="108" Margin="11,67,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Label  Content="Trainer" FontSize="25" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.507,-0.075" Foreground="#FF00295F" Height="39" Width="98" Margin="11,135,0,0" Grid.RowSpan="2">
+                <Label.Effect>
+                    <DropShadowEffect/>
+                </Label.Effect>
+            </Label>
+            <Image x:Name="imgLibrary"  Grid.Column="0" Grid.Row="1" Margin="0,96,8,10">
+                <Image.Source>
+                    <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\library.png"/>
+                </Image.Source>
+            </Image>
+
+
 
             <Border BorderBrush="#FF00295F" BorderThickness="2" Grid.Column="1" Margin="34,19,33,60">
                 <Border.Effect>
@@ -27,11 +55,11 @@
             </Border>
 
             <!-- Option Buttons -->
-            <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Vertical" Margin="10">
-                <Button x:Name="btnOption1" Content="Option 1" Margin="0,5"/>
-                <Button x:Name="btnOption2" Content="Option 2" Margin="0,5"/>
-                <Button x:Name="btnOption3" Content="Option 3" Margin="0,5"/>
-                <Button x:Name="btnOption4" Content="Option 4" Margin="0,5"/>
+            <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical" Margin="10,10,10,107">
+                <Button x:Name="btnOption1" Content="Option 1" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" />
+                <Button x:Name="btnOption2" Content="Option 2" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" />
+                <Button x:Name="btnOption3" Content="Option 3" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" />
+                <Button x:Name="btnOption4" Content="Option 4" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" />
             </StackPanel>
         </Grid>
     </Grid>
