@@ -47,22 +47,25 @@
 
 
 
-            <Border BorderBrush="#FF00295F" BorderThickness="2" Grid.Column="1" Margin="34,19,202,60">
+            <Border BorderBrush="#FF00295F" BorderThickness="2" Grid.Column="1" Margin="226,48,10,44">
                 <Border.Effect>
                     <DropShadowEffect/>
                 </Border.Effect>
                 <TextBlock x:Name="txtbRandomCallDescriptions" TextWrapping="Wrap" Background="GhostWhite" FontStyle="Oblique"  FontSize="15" FontWeight="Bold" Margin="10,10,8,10"/>
             </Border>
 
+
             <!-- Option Buttons -->
-            <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical" Margin="10,10,10,107">
-                <Button x:Name="btnOption1" Content="Option 1" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" />
-                <Button x:Name="btnOption2" Content="Option 2" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" />
-                <Button x:Name="btnOption3" Content="Option 3" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" />
-                <Button x:Name="btnOption4" Content="Option 4" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" />
+            <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Vertical" Margin="10,58,10,58">
+                <Button x:Name="btnOption1" Content="Option 1" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold"  Click="btnOption_Click"/>
+                <Button x:Name="btnOption2" Content="Option 2" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Click="btnOption_Click"/>
+                <Button x:Name="btnOption3" Content="Option 3" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Click="btnOption_Click" />
+                <Button x:Name="btnOption4" Content="Option 4" Margin="0,5" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Click="btnOption_Click"/>
             </StackPanel>
 
-            <TextBlock  Grid.Column="1" Grid.Row="0" Name="tbScore" Text="Score: 0/0" HorizontalAlignment="Left" Margin="395,24,0,60" FontWeight="Bold" FontSize="25" Width="143"/>
+            <TextBlock  Grid.Column="1" Name="tbScore" Text="Score: 0/0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,74" FontWeight="Bold" FontSize="25" Width="144"/>
+            <Button x:Name="btnGenerate" Content="Generate Description" Background="GhostWhite" BorderBrush="#FF00295F" BorderThickness="3" FontSize="18" FontWeight="Bold" Click="btnGenerate_Click" Margin="10,48,359,38" Grid.Column="1"/>
+
         </Grid>
     </Grid>
 </Window>

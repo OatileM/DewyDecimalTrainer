@@ -13,12 +13,27 @@ namespace DewDecimalTrainingApp
         private string filePath;
         private DeweyTreeStructure deweyTree;
         private List<DeweyTreeNode> options;
+        private int correctAttempts;
+        private int totalAttempts;
 
         public FindCallNumber()
         {
             InitializeComponent();
             LoadDeweyData();
+            InitializeScore();
             LoadQuestion();
+        }
+
+        private void InitializeScore()
+        {
+            correctAttempts = 0;
+            totalAttempts = 0;
+            UpdateScore();
+        }
+
+        private void UpdateScore()
+        {
+            tbScore.Text = $"Score: {correctAttempts}/{totalAttempts}";
         }
 
         private void LoadDeweyData()
@@ -52,7 +67,7 @@ namespace DewDecimalTrainingApp
                 // Displays the description in the TextBlock
                 txtbRandomCallDescriptions.Text = randomNode.Name;
 
-                // Generates options
+                // Generate options
                 options = GenerateOptions(randomNode);
 
                 // Display options on buttons
@@ -67,7 +82,6 @@ namespace DewDecimalTrainingApp
                 MessageBox.Show("No third-level nodes found in the Dewey Decimal tree.");
             }
         }
-
 
         private List<DeweyTreeNode> GenerateOptions(DeweyTreeNode correctOption)
         {
@@ -89,16 +103,20 @@ namespace DewDecimalTrainingApp
 
         private void CheckAnswer(DeweyTreeNode selectedOption)
         {
+            totalAttempts++;
+
             if (selectedOption == options[0])
             {
+                correctAttempts++;
                 MessageBox.Show("Correct answer! Loading next question.");
-                LoadQuestion();
             }
             else
             {
                 MessageBox.Show("Wrong answer! Loading next question.");
-                LoadQuestion();
             }
+
+            UpdateScore();
+            LoadQuestion();
         }
 
         private void btnOption_Click(object sender, RoutedEventArgs e)
@@ -113,6 +131,12 @@ namespace DewDecimalTrainingApp
             {
                 CheckAnswer(selectedOption);
             }
+        }
+
+        private void btnGenerate_Click(object sender, RoutedEventArgs e)
+        {
+            // Call the LoadQuestion method to generate a new question
+            LoadQuestion();
         }
     }
 }
