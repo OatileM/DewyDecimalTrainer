@@ -47,3 +47,33 @@ D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTraini
 D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\IdentifyAreas.baml
 D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\FindCallNumber.g.cs
 D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\obj\Debug\net6.0-windows\FindCallNumber.baml
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.exe
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.dll.config
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.deps.json
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.runtimeconfig.json
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.dll
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\bin\Debug\net6.0-windows\DewDecimalTrainingApp.pdb
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.csproj.AssemblyReference.cache
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\FindCallNumber.g.cs
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\IdentifyAreas.g.cs
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ReplaceBook.g.cs
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp_MarkupCompile.cache
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp_MarkupCompile.lref
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\FindCallNumber.baml
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\IdentifyAreas.baml
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ReplaceBook.baml
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.g.resources
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.AssemblyInfoInputs.cache
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.AssemblyInfo.cs
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.csproj.CoreCompileInputs.cache
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.csproj.CopyComplete
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.dll
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\refint\DewDecimalTrainingApp.dll
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.pdb
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\DewDecimalTrainingApp.genruntimeconfig.cache
+C:\Users\Kobi\Documents\GitHub\DewyDecimalTrainer\DewDecimalTrainingApp\obj\Debug\net6.0-windows\ref\DewDecimalTrainingApp.dll

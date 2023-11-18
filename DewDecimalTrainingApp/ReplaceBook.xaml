@@ -39,7 +39,7 @@
         </Label>
         <Image x:Name="imgLibrary"  Grid.Column="0" Grid.Row="1" Margin="0,96,8,10">
             <Image.Source>
-                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\library.png"/>
+                <BitmapImage UriSource="pack://application:,,,/DewDecimalTrainingApp;component/Images/library.png"/>
             </Image.Source>
         </Image>
 

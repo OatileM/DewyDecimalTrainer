@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DUDtl53u9ejuAMYMc+3097q+BRPTCgZld4MkxZMgxkFYDeqmkqw+IDPTXOgw2xvAoed2QWfNQ4UzUfNHtIFwMQ==",
+  "dgSpecHash": "ubHJHbO0k0rNFVPv1cFh8bry+doWQ1VmQGv+uF9V/ZrcNd6P/GPOuhtV66EmJqo15pX3kMBosCG4sxLImXujNQ==",
   "success": true,
-  "projectFilePath": "D:\\Visual Studio\\School Projects\\PROG7312\\DewDecimalTrainingApp\\DewDecimalTrainingApp\\DewDecimalTrainingApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Kobi\\Documents\\GitHub\\DewyDecimalTrainer\\DewDecimalTrainingApp\\DewDecimalTrainingApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kobi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

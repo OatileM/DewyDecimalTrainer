@@ -5,53 +5,41 @@ using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using DewDecimalTrainingApp.Data;
+using DewDecimalTrainingApp.Objects;
 
 namespace DewDecimalTrainingApp
 {
     public partial class FindCallNumber : Window
     {
-        private string filePath;
+        private FileHelper _fileHelper;
         private DeweyTreeStructure deweyTree;
         private List<DeweyTreeNode> options;
+        private Score score;
         private int correctAttempts;
         private int totalAttempts;
 
         public FindCallNumber()
         {
+            score = new Score();
+            deweyTree = LoadDeweyData(); //Read JSON file into deweyTree object
             InitializeComponent();
-            LoadDeweyData();
-            InitializeScore();
             LoadQuestion();
         }
 
-        private void InitializeScore()
-        {
-            correctAttempts = 0;
-            totalAttempts = 0;
-            UpdateScore();
-        }
-
+        /// <summary>
+        /// Updates current score
+        /// </summary>
         private void UpdateScore()
         {
-            tbScore.Text = $"Score: {correctAttempts}/{totalAttempts}";
+            tbScore.Text = score.UpdateScore();
         }
 
-        private void LoadDeweyData()
+        private DeweyTreeStructure LoadDeweyData()
         {
-            try
-            {
-                filePath = @"D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Data\dewey_data.json";
-                string jsonData = System.IO.File.ReadAllText(filePath);
-                deweyTree = JsonSerializer.Deserialize<DeweyTreeStructure>(jsonData);
-
-                MessageBox.Show("JSON Data extracted successfully!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error loading Dewey Decimal data: {ex.Message}");
-            }
+            return _fileHelper.ReadJsonFile();
         }
 
+        //This can be moved into its own object, question can be an object
         private void LoadQuestion()
         {
             // Get all third-level nodes
@@ -68,7 +56,7 @@ namespace DewDecimalTrainingApp
                 txtbRandomCallDescriptions.Text = randomNode.Name;
 
                 // Generate options
-                options = GenerateOptions(randomNode);
+                options = deweyTree.GenerateOptions(randomNode);
 
                 // Display options on buttons
                 btnOption1.Content = options[0].Name;
@@ -81,24 +69,6 @@ namespace DewDecimalTrainingApp
                 // Handles the case where there are no third-level nodes
                 MessageBox.Show("No third-level nodes found in the Dewey Decimal tree.");
             }
-        }
-
-        private List<DeweyTreeNode> GenerateOptions(DeweyTreeNode correctOption)
-        {
-            List<DeweyTreeNode> allOptions = deweyTree.GetTopLevelNodes().ToList();
-            allOptions.Remove(correctOption);
-
-            // Randomly select three incorrect options
-            Random random = new Random();
-            List<DeweyTreeNode> incorrectOptions = allOptions.OrderBy(x => random.Next()).Take(3).ToList();
-
-            // Add the correct option
-            incorrectOptions.Add(correctOption);
-
-            // Shuffle the options
-            incorrectOptions = incorrectOptions.OrderBy(x => random.Next()).ToList();
-
-            return incorrectOptions;
         }
 
         private void CheckAnswer(DeweyTreeNode selectedOption)

@@ -29,6 +29,24 @@ namespace DewDecimalTrainingApp.Data
             ThirdLevelNodes = GetThirdLevelNodes(Root);
         }
 
+        public List<DeweyTreeNode> GenerateOptions(DeweyTreeNode correctOption)
+        {
+            List<DeweyTreeNode> allOptions = GetTopLevelNodes().ToList();
+            allOptions.Remove(correctOption);
+
+            // Randomly select three incorrect options
+            Random random = new Random();
+            List<DeweyTreeNode> incorrectOptions = allOptions.OrderBy(x => random.Next()).Take(3).ToList();
+
+            // Add the correct option
+            incorrectOptions.Add(correctOption);
+
+            // Shuffle the options
+            incorrectOptions = incorrectOptions.OrderBy(x => random.Next()).ToList();
+
+            return incorrectOptions;
+        }
+
         // Add a Dewey category to the tree
         public void AddCategory(string category, List<string> subcategories)
         {

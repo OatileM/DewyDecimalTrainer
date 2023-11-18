@@ -8,7 +8,7 @@
         Title="IdentifyAreas" Height="450" Width="800">
     <Grid >
         <Grid.Background>
-            <ImageBrush ImageSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\background.jpeg" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="pack://application:,,,/DewDecimalTrainingApp;component/Images/Images\background.jpeg" Stretch="UniformToFill" />
         </Grid.Background>
         <Grid.ColumnDefinitions >
             <ColumnDefinition Width="50"/>

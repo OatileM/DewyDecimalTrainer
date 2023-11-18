@@ -45,7 +45,7 @@
         </Label>
         <Image x:Name="imgLibrary"  Grid.Column="1" Grid.Row="1" Margin="0,144,10,0" Grid.RowSpan="2">
             <Image.Source>
-                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\library.png"/>
+                <BitmapImage UriSource="pack://application:,,,/DewDecimalTrainingApp;component/Images/library.png"/>
             </Image.Source>
         </Image>
 
@@ -69,7 +69,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
             <Image.Source>
-                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\replacebook.png"/>
+                <BitmapImage UriSource="pack://application:,,,/DewDecimalTrainingApp;component/Images/replacebook.png"/>
             </Image.Source>
         </Image>
 
@@ -88,7 +88,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
             <Image.Source>
-                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\binoculors.png"/>
+                <BitmapImage UriSource="pack://application:,,,/DewDecimalTrainingApp;component/Images/binoculors.png"/>
             </Image.Source>
         </Image>
 
@@ -109,13 +109,13 @@
                 </TransformGroup>
             </Image.RenderTransform>
             <Image.Source>
-                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\identifyareas.png"/>
+                <BitmapImage UriSource="pack://application:,,,/DewDecimalTrainingApp;component/Images/identifyareas.png"/>
             </Image.Source>
         </Image>
 
         <Image x:Name="imgOpenBook"  Grid.Column="2"  Grid.Row="2"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="161,30,0,0" Width="277" Height="115">
             <Image.Source>
-                <BitmapImage UriSource="D:\Visual Studio\School Projects\PROG7312\DewDecimalTrainingApp\DewDecimalTrainingApp\Images\openbook.png"/>
+                <BitmapImage UriSource="pack://application:,,,/DewDecimalTrainingApp;component/Images/openbook.png"/>
             </Image.Source>
         </Image>
         
